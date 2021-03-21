@@ -8,4 +8,4 @@
 * Implement your own utility functions for getting best results
 
 ## Run hsw.R and get all the optimal results
-<img src='figures/exampleresult.png'/>
+<img src='figures/exampleresulttable.png'/>
