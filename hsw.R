@@ -6,14 +6,23 @@
 
 # packages
 library(tidyverse)
-#library(readxl)
+library(readxl)
+
+USEEXCEL <- T
 
 # read items and sets
-# d <- read_excel("hsw.xlsx", sheet = 1)
-# sets <- read_excel("hsw.xlsx", sheet = 2)
-d <- read.csv2("items.csv", header = T, encoding = "UTF-8")
-sets <- read.csv2("setbonus.csv", header = T, encoding = "UTF-8")
-
+if (USEEXCEL) {
+  # read from EXCEL
+  d <- read_excel("hsw.xlsx", sheet = 1)
+  sets <- read_excel("hsw.xlsx", sheet = 2)
+  # make valid variable names
+  names(d) <- make.names(names(d))
+  names(sets) <- make.names(names(sets))
+} else {
+  # read from CSV
+  d <- read.csv2("items.csv", header = T, encoding = "UTF-8")
+  sets <- read.csv2("setbonus.csv", header = T, encoding = "UTF-8")
+}
 setitems <- sets[, 12:ncol(sets)]
 
 # create grid
@@ -35,12 +44,12 @@ pb <- txtProgressBar(min = 0, max = total, style = 3)
 cstab <- data.frame()
 for (i in 1:nrow(g)) {
   # item i
-  rowi <- g[i, ]
+  rowi <- g[i,]
   
   # item colsum
   cs <- d %>%
     filter(Item %in% rowi) %>%
-    select(-Item,-Position,-Set)
+    select(-Item, -Position, -Set)
   
   # check for set bonus
   setbonus <- which(rowSums(matrix(
@@ -62,12 +71,12 @@ names(cstab) <- names(d[, 4:13])
 # bind grid results
 res <- cbind(g, cstab) %>%
   mutate(
-    Utility = `Boost Refill` / max(`Boost Refill`) * .3 +
+    Utility = `Boost.Refill` / max(`Boost.Refill`) * .3 +
       HealthDrain / max(HealthDrain) * .4 +
       Health / max(Health) * .1 +
       Food / max(Food * .2)
   ) %>%
-  arrange(-HealthDrain,-`Boost Refill`,-Food,-Health,-GoldRush)
+  arrange(-HealthDrain, -`Boost.Refill`, -Food, -Health, -GoldRush)
 
 # view resulting list
 view(res)
