@@ -1,0 +1,50 @@
+Item;Set;Position;Gold;GoldRush;Survive;Health;Growth;Food;HealthDrain;Boost Refill;Boost Speed;Points
+Pirate Jacket;Pirate;Tail;12;;;;;;;;;
+Pirate Pistol;Pirate;Pectoral;;20;;;;;;;;
+Pirate Cravat;Pirate;Chest;12;;;;;;;;;
+Pirate Hat;Pirate;Hat;10;;;;;;;;;
+Juggling Club;Clown;Pectoral;;;;;;;;;;12
+Clown Tie;Clown;Chest;;;;;;;;;;12
+Circus Hat;Clown;Hat;;;;;10;;;;;
+Red Nose;Clown;Nose;;;;;;;;;;10
+Bone Belt;Witch Doc;Tail;;;;;12;;;;;
+Witch Doc Staff;Witch Doc;Pectoral;;;;;;15;;;;
+Bone Necklace;Witch Doc;Chest;;;;12;;;;;;
+Bone Piercing;Witch Doc;Dorsal;;;25;;;;;;;
+Tusks;Witch Doc;Nose;;;;;;;10;;;
+Royal Robe;Royal;Tail;20;;;;;;;;;
+Royal Scepter;Royal;Pectoral;;;;;15;;;;;
+Royal Necklace;Royal;Chest;12;;;;;;;;;
+Royal Crown;Royal;Hat;;25;;;;;;;;
+Loincloth;Caveman;Tail;;;50;;;;;;;
+Prehistoric Club;Caveman;Pectoral;;;;;;;15;;;
+Prehistoric Necklace;Caveman;Chest;;;;;;20;;;;
+Sabertooth Pelt;Caveman;Hat;;;;;;;15;;;
+Chef's Apron;Chef;Tail;;;;5;;;;;;
+Saucepan;Chef;Pectoral;;;;;;5;;;;
+Garlic Necklace;Chef;Chest;;;;;;10;;;;
+Chef's Hat;Chef;Hat;;;;;;;5;;;
+Poncho;Mariachi;Tail;;;;;5;;;;;
+Mariachi Guitar;Mariachi;Pectoral;;15;;;;;;;;
+Sombrero;Mariachi;Hat;;;;;8;;;;;
+Mustache;Mariachi;Nose;10;;;;;;;;;
+Athlete Shorts;Athlete;Tail;;;;;;;;;10;
+Weights;Athlete;Pectoral;;;;10;;;;;;
+Gold Medal;Athlete;Chest;;20;;;;;;;;
+Athlete Headband;Athlete;Hat;;;;;;;;20;;
+Warrior Armor Premium;Warrior;Tail;;;;20;;;;;;
+Warrior Spear;Warrior;Pectoral;;;;;;;;;;15
+Warrior Breastplate;Warrior;Chest;;;;;;;;;;15
+Warrior Helmet Premium;Warrior;Hat;;35;;;;;;;;
+Football Shorts;AmFootball;Tail;;;;10;;;;;;
+American Football;AmFootball;Pectoral;;25;;;;;;;;
+Football Pads;AmFootball;Chest;;;;15;;;;;;
+Football Helmet;AmFootball;Hat;;;;;;;12;;;
+Bunny Tail;Bunny;Tail;;;;10;;;;;;
+Carrot;Bunny;Pectoral;;;;;;;10;;;
+Bunny Ears;Bunny;Hat;;;;;;;10;;;
+Bunny Nose;Bunny;Nose;;;;;;;12;;;
+Aircraft Wings;Aviator;Tail;;;;;;;;30;;
+Aviator Scarf;Aviator;Chest;;;;15;;;;;;
+Aviator Helmet;Aviator;Hat;;;;12;;;;;;
+Aircraft Propeller;Aviator;Nose;;;;;;;;;15;

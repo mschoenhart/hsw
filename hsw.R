@@ -6,11 +6,13 @@
 
 # packages
 library(tidyverse)
-library(readxl)
+#library(readxl)
 
 # read items and sets
-d <- read_excel("hsw.xlsx", sheet = 1)
-sets <- read_excel("hsw.xlsx", sheet = 2)
+# d <- read_excel("hsw.xlsx", sheet = 1)
+# sets <- read_excel("hsw.xlsx", sheet = 2)
+d <- read.csv2("items.csv", header = T, encoding = "UTF-8")
+sets <- read.csv2("setbonus.csv", header = T, encoding = "UTF-8")
 
 setitems <- sets[, 12:ncol(sets)]
 
